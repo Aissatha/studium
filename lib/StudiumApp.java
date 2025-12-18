@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'core/config/routes.dart';
 import 'features/applications/presentation/pages/applications_list_page.dart';
 import 'features/messaging/presentation/pages/conversations_page.dart';
-import 'features/student/presentation/pages/profile_page.dart';
 
 class StudiumApp extends StatelessWidget {
   const StudiumApp({super.key});
@@ -20,8 +19,7 @@ class StudiumApp extends StatelessWidget {
       // Routes nommées
       routes: {
         Routes.applicationsList: (_) => const ApplicationsListPage(),
-        Routes.conversations: (_) => const ConversationsPage(),
-        Routes.profile: (_) => const ProfilePage(), // ✅ AJOUTE ÇA
+        Routes.conversations: (_) => const ConversationsPage(), // ✅ ICI
       },
 
       // Fallback si route inconnue
